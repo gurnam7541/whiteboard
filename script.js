@@ -47,6 +47,8 @@ $(document).ready(function() {
         document.addEventListener('touchmove', preventDefault, { passive: false });
     }
 
+    disableScroll();
+
     // Function to enable scrolling
     function enableScroll() {
         document.body.style.overflow = '';
@@ -67,7 +69,7 @@ $(document).ready(function() {
 
     function stopDrawing() {
         drawing = false;
-        enableScroll();
+       // enableScroll();
         ctx.beginPath();
     }
 
